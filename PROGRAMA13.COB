@@ -3,7 +3,7 @@
       ******************************************************************
       * Author:CLEUBER MACIEL
       * Date: 19/07/2024
-      * Purpose: LEARN COBOL
+      * Purpose: USO DE CONDIÇÃO IF ELSE EM COBOL.
       * Tectonics: cobc
       ******************************************************************
        ENVIRONMENT DIVISION.
