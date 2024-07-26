@@ -3,7 +3,7 @@
       ******************************************************************
       * Author:CLEUBER MACIEL
       * Date: 19/07/2024
-      * Purpose: USOR DO PERFORM TECLA DE ESCAPE
+      * Purpose: USO DO PERFORM TECLA DE ESCAPE
       * Tectonics: cobc
       ******************************************************************
        ENVIRONMENT DIVISION.
