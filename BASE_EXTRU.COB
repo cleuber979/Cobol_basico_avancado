@@ -1,9 +1,9 @@
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. PROGRAMXX.
+       PROGRAM-ID. PROGRAM18.
       ******************************************************************
       * Author:CLEUBER MACIEL
       * Date: 19/07/2024
-      * Purpose: LEARN COBOL
+      * Purpose: COMANDO ACCURS ARRAY DO COBOL USO NA PRATICA. 
       * Tectonics: cobc
       ******************************************************************
        ENVIRONMENT DIVISION.
@@ -47,4 +47,4 @@
        0300-FINALIZAR         SECTION.
 
 
-       END PROGRAM PROGRAMXX.
+       END PROGRAM PROGRAM18.
