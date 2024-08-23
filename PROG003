@@ -1,0 +1,72 @@
+ REVEDIT  HERC01.LIBS.COBOL(PROG003) - 1.18                 COLUMNS 00001 00072 
+ COMMAND ===>                                                    SCROLL ===> CS 
+   64KB ----+----1----+----2----+----3----+----4----+----5----+----6----+----7--
+ ****** ****ZAP****AUTOSAVE********** TOP OF DATA ******************************
+ 000001        IDENTIFICATION                  DIVISION.                        
+ 000002        PROGRAM-ID. PROG003.                                             
+ 000003        ENVIRONMENT                     DIVISION.                        
+ 000004        DATA                            DIVISION.                        
+ 000005        WORKING-STORAGE                 SECTION.                         
+ 000006        77  WRK-V1  PIC 9(02) VALUE ZEROS.                               
+ 000007        77  WRK-V2  PIC 9(02) VALUE ZEROS.                               
+ 000008        77  WRK-RES PIC 9(03) VALUE ZEROS.                               
+ 000009        PROCEDURE                   DIVISION.                            
+ 000010            ACCEPT WRK-V1.                                               
+ 000011            ACCEPT WRK-V2.                                               
+ 000012       *=========================================                        
+ 000013            ADD WRK-V1 WRK-V2 GIVING WRK-RES.                            
+ 000014            DISPLAY '-------ADICAO---------'.                            
+ 000015            DISPLAY 'VALOR 1 .....' WRK-V1.                              
+ 000016            DISPLAY 'VALOR 2 .....' WRK-V2.                              
+ 000017            DISPLAY 'RESULTADO....' WRK-RES.                             
+ 000018       *=========================================                        
+ 000019               MOVE 0 TO WRK-RES.                                        
+ 000020            SUBTRACT WRK-V1 FROM WRK-V2 GIVING WRK-RES. 
+  REVEDIT  HERC01.LIBS.COBOL(PROG003) - 1.18                 COLUMNS 00001 00072 
+ COMMAND ===>                                                    SCROLL ===> CS 
+   64KB ----+----1----+----2----+----3----+----4----+----5----+----6----+----7--
+ 000021            DISPLAY '-------SUBTRACAO------'.                            
+ 000022            DISPLAY 'VALOR 1 .....' WRK-V1.                              
+ 000023            DISPLAY 'VALOR 2 .....' WRK-V2.                              
+ 000024            DISPLAY 'RESULTADO....' WRK-RES.                             
+ 000025       *=========================================                        
+ 000026               MOVE 0 TO WRK-RES.                                        
+ 000027            MULTIPLY WRK-V1 BY WRK-V2 GIVING WRK-RES.                    
+ 000028            DISPLAY '-------MULTIPICACAO---'.                            
+ 000029            DISPLAY 'VALOR 1 .....' WRK-V1.                              
+ 000030            DISPLAY 'VALOR 2 .....' WRK-V2.                              
+ 000031            DISPLAY 'RESULTADO....' WRK-RES.                             
+ 000032       *=========================================                        
+ 000033               MOVE 0 TO WRK-RES.                                        
+ 000034            DIVIDE WRK-V1 BY WRK-V2 GIVING WRK-RES.                      
+ 000035            DISPLAY '-------DIVISAO------'.                              
+ 000036            DISPLAY 'VALOR 1 .....' WRK-V1.                              
+ 000037            DISPLAY 'VALOR 2 .....' WRK-V2.                              
+ 000038            DISPLAY 'RESULTADO....' WRK-RES.                             
+ 000039       *=========================================                        
+ 000040                MOVE 0 TO WRK-RES.                                       
+ 000041            COMPUTE WRK-RES = (WRK-V1 + WRK-V2) / 2.    
+  REVEDIT  HERC01.LIBS.COBOL(PROG003) - 1.18                 COLUMNS 00001 00072 
+ COMMAND ===>                                                    SCROLL ===> CS 
+   64KB ----+----1----+----2----+----3----+----4----+----5----+----6----+----7--
+ 000042                  DISPLAY '--------MEDIA------'.                         
+ 000043                  DISPLAY 'VALOR 1 ....' WRK-V1.                         
+ 000044                  DISPLAY 'VALOR 2 ....' WRK-V2.                         
+ 000045                  DISPLAY 'RESULTADO...' WRK-RES.                        
+ 000046            STOP RUN.                                                    
+ ****** ****ZAP****AUTOSAVE********* BOTTOM OF DATA ****************************
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                      7784K FREE
