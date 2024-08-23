@@ -38,5 +38,5 @@
            CONTINUE.
        0300-FINALIZAR         SECTION.
 
-           DISPLAY "Hello world".
+          
            CLOSE CLIENTES.
