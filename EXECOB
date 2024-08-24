@@ -1,0 +1,24 @@
+ REVEDIT  HERC01.LIBS.JCL(EXECOB) - 1.00                    COLUMNS 00001 00072 
+ COMMAND ===>                                                    SCROLL ===> CS 
+ ****** ****ZAP****AUTOSAVE********** TOP OF DATA ******************************
+ 000001 //HERC01XX JOB (PROG001),                                               
+ 000002 //             'EXECUTA PROG001',                                       
+ 000003 //             CLASS=A,                                                 
+ 000004 //             MSGCLASS=H,                                              
+ 000005 //             REGION=8M,TIME=1440,                                     
+ 000006 //             MSGLEVEL=(1,1),                                          
+ 000007 //             NOTIFY=HERC01                                            
+ 000008 //STEP01   EXEC PGM=PROG001                                             
+ 000009 //STEPLIB  DD DSN=HERC01.LIBS.LOAD,DISP=SHR                             
+ 000010 //SYSOUT   DD SYSOUT=*                                                  
+ ****** ****ZAP****AUTOSAVE********* BOTTOM OF DATA ****************************
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                      7784K FREE
