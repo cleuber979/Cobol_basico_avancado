@@ -1,0 +1,24 @@
+ REVEDIT  HERC01.LIBS.JCL(COMPILA) - 1.00                   COLUMNS 00001 00072 
+ COMMAND ===>                                                    SCROLL ===> CS 
+ ****** ****ZAP****AUTOSAVE********** TOP OF DATA ******************************
+ 000001 //HERC01XX JOB (PROG001),                                               
+ 000002 //             'EXECUTA PROG001',                                       
+ 000003 //             CLASS=A,                                                 
+ 000004 //             MSGCLASS=H,                                              
+ 000005 //             REGION=8M,TIME=1440,                                     
+ 000006 //             MSGLEVEL=(1,1),                                          
+ 000007 //             NOTIFY=HERC01                                            
+ 000008 //COMPILA  EXEC COBOL,                                                  
+ 000009 //         PROG='PROG001',                                              
+ 000010 //         BIBF='HERC01.LIBS.COBOL',                                    
+ 000011 //         BIBC='HERC01.LIBS.LOAD'                                      
+ ****** ****ZAP****AUTOSAVE********* BOTTOM OF DATA ****************************
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                      7784K FREE
