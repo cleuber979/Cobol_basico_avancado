@@ -1,0 +1,28 @@
+ REVEDIT  HERC01.LIBS.COBOL(PROG008) - 1.08                 COLUMNS 00001 00072 
+ COMMAND ===>                                                    SCROLL ===> CS 
+   64KB ----+----1----+----2----+----3----+----4----+----5----+----6----+----7--
+ ****** ****ZAP****AUTOSAVE********** TOP OF DATA ******************************
+ 000001        IDENTIFICATION                  DIVISION.                        
+ 000002        PROGRAM-ID. PROG008.                                             
+ 000003        ENVIRONMENT                     DIVISION.                        
+ 000004        CONFIGURATION                   SECTION.                         
+ 000005        SPECIAL-NAMES.                                                   
+ 000006            DECIMAL-POINT IS COMMA.                                      
+ 000007        DATA                            DIVISION.                        
+ 000008        WORKING-STORAGE                 SECTION.                         
+ 000009        77  WRK-N1       PIC 9(02)V99 VALUE ZEROS.                       
+ 000010        77  WRK-N2       PIC 9(02)V99 VALUE ZEROS.                       
+ 000011        77  WRK-MEDIA    PIC 9(03)V99 COMP   VALUE ZEROS.                
+ 000012        77  WRK-MEDIA-ED PIC ZZ9,99   VALUE ZEROS.                       
+ 000013        PROCEDURE                       DIVISION.                        
+ 000014            ACCEPT WRK-N1.                                               
+ 000015            ACCEPT WRK-N2.                                               
+ 000016       *=========================================                        
+ 000017               COMPUTE WRK-MEDIA = (WRK-N1 + WRK-N2) / 2.                
+ 000018               MOVE WRK-MEDIA TO WRK-MEDIA-ED.                           
+ 000019               DISPLAY 'MEDIA ' WRK-MEDIA-ED.                            
+ 000020               IF WRK-MEDIA EQUAL 6 OR WRK-MEDIA GREATER THAN 6 
+000021               DISPLAY 'ALUNO APROVADO'       
+000022              ELSE                            
+000023               DISPLAY 'ALUNO REPROVADO'.     
+000024            STOP RUN.                         
