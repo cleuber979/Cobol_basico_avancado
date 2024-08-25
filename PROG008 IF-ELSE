@@ -24,5 +24,8 @@
  000020               IF WRK-MEDIA EQUAL 6 OR WRK-MEDIA GREATER THAN 6 
 000021               DISPLAY 'ALUNO APROVADO'       
 000022              ELSE                            
-000023               DISPLAY 'ALUNO REPROVADO'.     
-000024            STOP RUN.                         
+000023                 IF WRK-MEDIA GREATER 2 AND LESS THAN 6  
+000024               DISPLAY 'ALUNO RECUREPARCAO '           
+000025                 ELSE                                  
+000026               DISPLAY ' ALUNO REPROVADO'.                  
+000027            STOP RUN.                         
