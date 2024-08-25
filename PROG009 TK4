@@ -1,0 +1,24 @@
+ REVEDIT  HERC01.LIBS.COBOL(PROG009) - 1.05                 COLUMNS 00001 00072 
+ COMMAND ===>                                                    SCROLL ===> CS 
+   64KB ----+----1----+----2----+----3----+----4----+----5----+----6----+----7--
+ ****** ****ZAP****AUTOSAVE********** TOP OF DATA ******************************
+ 000001        IDENTIFICATION                  DIVISION.                        
+ 000002        PROGRAM-ID. PROG009.                                             
+ 000003        ENVIRONMENT                     DIVISION.                        
+ 000004        DATA                            DIVISION.                        
+ 000005        WORKING-STORAGE                 SECTION.                         
+ 000006        77  WRK-NUM         PIC 9(02)   VALUE 8.                         
+ 000007        77  WRK-RES         PIC 9(02)   VALUE ZEROS.                     
+ 000008        77  WRK-CONT        PIC 9(02)   VALUE 1.                         
+ 000009        PROCEDURE                   DIVISION.                            
+ 000010        0001-PRINCIPAL.                                                  
+ 000011            PERFORM 0100-IMPRIME 10 TIMES.                               
+ 000012            STOP RUN.                                                    
+ 000013        0100-IMPRIME.                                                    
+ 000014            MULTIPLY WRK-NUM BY WRK-CONT GIVING WRK-RES.                 
+ 000015            DISPLAY 'NUMERO ' WRK-NUM ' X ' WRK-CONT ' = ' WRK-RES.      
+ 000016             ADD 1 TO WRK-CONT.                                          
+ ****** ****ZAP****AUTOSAVE********* BOTTOM OF DATA ****************************
+                                                                                
+                                                                                
+                                                                      7784K FREE
