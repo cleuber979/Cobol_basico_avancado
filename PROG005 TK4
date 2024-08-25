@@ -1,0 +1,24 @@
+ REVEDIT  HERC01.LIBS.COBOL(PROG005) - 1.00                 COLUMNS 00001 00072 
+ COMMAND ===>                                                    SCROLL ===> CS 
+   64KB ----+----1----+----2----+----3----+----4----+----5----+----6----+----7--
+ ****** ****ZAP****AUTOSAVE********** TOP OF DATA ******************************
+ 000001        IDENTIFICATION                  DIVISION.                        
+ 000002        PROGRAM-ID. PROG005.                                             
+ 000003        ENVIRONMENT                     DIVISION.                        
+ 000004        DATA                            DIVISION.                        
+ 000005        WORKING-STORAGE                 SECTION.                         
+ 000006        77  WRK-V1  PIC 9(02) VALUE ZEROS.                               
+ 000007        77  WRK-V2  PIC 9(02) VALUE ZEROS.                               
+ 000008        77  WRK-RES PIC 9(02) COMP VALUE ZEROS.                          
+ 000009        PROCEDURE                   DIVISION.                            
+ 000010            ACCEPT WRK-V1.                                               
+ 000011            ACCEPT WRK-V2.                                               
+ 000012       *========================================                         
+ 000013               ADD WRK-V1 WRK-V2 TO WRK-RES.                             
+ 000014                  DISPLAY ' -------ADICAO------'.                        
+ 000015                  DISPLAY ' VALOR1 .....' WRK-V1.                        
+ 000016                  DISPLAY ' VALOR2 .....' WRK-V2.                        
+ 000017                  DISPLAY ' RESULTADO...' WRK-RES.                       
+ 000018            STOP RUN.                                                    
+ ****** ****ZAP****AUTOSAVE********* BOTTOM OF DATA ****************************
+                                                                      7780K FREE
