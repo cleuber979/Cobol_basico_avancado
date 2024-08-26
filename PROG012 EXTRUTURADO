@@ -1,0 +1,25 @@
+ REVEDIT  HERC01.LIBS.COBOL(PROG012) - 1.01                 COLUMNS 00001 00072 
+ COMMAND ===>                                                    SCROLL ===> CS 
+   64KB ----+----1----+----2----+----3----+----4----+----5----+----6----+----7--
+ ****** ****ZAP****AUTOSAVE********** TOP OF DATA ******************************
+ 000001        IDENTIFICATION                  DIVISION.                        
+ 000002        PROGRAM-ID. PROG012.                                             
+ 000003        ENVIRONMENT                     DIVISION.                        
+ 000004        DATA                            DIVISION.                        
+ 000005        WORKING-STORAGE                 SECTION.                         
+ 000006        77    WRK-DADOS         PIC 9(05) VALUE ZEROS.                   
+ 000007        77    WRK-RESUL         PIC 9(06) VALUE ZEROS.                   
+ 000008        PROCEDURE                   DIVISION.                            
+ 000009        0001-PRINCIPAL.                                                  
+ 000010            PERFORM 0100-INICIAR.                                        
+ 000011            IF WRK-DADOS GREATER THAN 0                                  
+ 000012               PERFORM 0200-PROCESSAR                                    
+ 000013               PERFORM 0300-FINALIZAR.                                   
+ 000014            STOP RUN.                                                    
+ 000015        0100-INICIAR.                                                    
+ 000016             ACCEPT WRK-DADOS.                                           
+ 000017        0200-PROCESSAR.                                                  
+ 000018             MULTIPLY WRK-DADOS BY 10 GIVING WRK-RESUL                   
+ 000019             DISPLAY ' RESULTADO ' WRK-RESUL.                            
+ 000020        0300-FINALIZAR.     
+ 000021            DISPLAY ' -----FINAL DE PROCESSAMENTO ---'.
