@@ -1,0 +1,72 @@
+ REVEDIT  HERC01.LIBS.COBOL(PROG014) - 1.12                 COLUMNS 00001 00072 
+ COMMAND ===>                                                    SCROLL ===> CS 
+   64KB ----+----1----+----2----+----3----+----4----+----5----+----6----+----7--
+ ****** ****ZAP****AUTOSAVE********** TOP OF DATA ******************************
+ 000001        IDENTIFICATION                  DIVISION.                        
+ 000002        PROGRAM-ID. PROG014.                                             
+ 000003        ENVIRONMENT                     DIVISION.                        
+ 000004        CONFIGURATION                   SECTION.                         
+ 000005        SPECIAL-NAMES.                                                   
+ 000006            DECIMAL-POINT IS COMMA.                                      
+ 000007        INPUT-OUTPUT                    SECTION.                         
+ 000008        FILE-CONTROL.                                                    
+ 000009            SELECT CLIENTES ASSIGN TO UT-S-ARQCLI.                       
+ 000010        DATA                            DIVISION.                        
+ 000011        FILE                            SECTION.                         
+ 000012        FD   CLIENTES                                                    
+ 000013             LABEL RECORDS ARE STANDARD                                  
+ 000014             RECORD CONTAINS 50 CHARACTERS                               
+ 000015             BLOCK  CONTAINS  0 RECORDS                                  
+ 000016             DATA   RECORD IS CLIENTES.                                  
+ 000017        01   REG-CLIENTES.                                               
+ 000018             05 REG-CODIGO    PIC 9(05).                                 
+ 000019             05 REG-NOME      PIC X(20).                                 
+ 000020             05 REG-ENDERECO  PIC X(25).   
+ REVEDIT  HERC01.LIBS.COBOL(PROG014) - 1.12                 COLUMNS 00001 00072 
+ COMMAND ===>                                                    SCROLL ===> CS 
+   64KB ----+----1----+----2----+----3----+----4----+----5----+----6----+----7--
+ 000021        WORKING-STORAGE                 SECTION.                         
+ 000022        77  FS-CLIENTES       PIC X VALUE 'N'.                           
+ 000023        PROCEDURE                       DIVISION.                        
+ 000024        0001-PRINCIPAL.                                                  
+ 000025             PERFORM 0100-INICIAR.                                       
+ 000026             PERFORM 0200-PROCESSAR UNTIL FS-CLIENTES = 'F'.             
+ 000027             PERFORM 0300-FINALIZAR.                                     
+ 000028            STOP RUN.                                                    
+ 000029       *---------------------------------------------------              
+ 000030        0100-INICIAR.                                                    
+ 000031            OPEN INPUT CLIENTES.                                         
+ 000032             READ CLIENTES AT END                                        
+ 000033                            MOVE 'F' TO FS-CLIENTES.                     
+ 000034               IF FS-CLIENTES = 'F'                                      
+ 000035                  DISPLAY 'NENHUM REGISTRO NO ARQUIVO'.                  
+ 000036       *---------------------------------------------------              
+ 000037        0200-PROCESSAR.                                                  
+ 000038                  DISPLAY 'CODIGO....' REG-CODIGO                        
+ 000039                  DISPLAY 'NOME......' REG-NOME                          
+ 000040                  DISPLAY 'ENDERECO..' REG-ENDERECO.                     
+ 000041                  DISPLAY '-------------------------------'.    
+ REVEDIT  HERC01.LIBS.COBOL(PROG014) - 1.12                 COLUMNS 00001 00072 
+ COMMAND ===>                                                    SCROLL ===> CS 
+   64KB ----+----1----+----2----+----3----+----4----+----5----+----6----+----7--
+ 000042            READ CLIENTES AT END                                         
+ 000043                          MOVE 'F' TO FS-CLIENTES.                       
+ 000044       *---------------------------------------------------              
+ 000045        0300-FINALIZAR.                                                  
+ 000046             CLOSE CLIENTES.                                             
+ ****** ****ZAP****AUTOSAVE********* BOTTOM OF DATA ****************************
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                      7784K FREE
