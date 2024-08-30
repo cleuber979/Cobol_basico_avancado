@@ -1,0 +1,24 @@
+ REVEDIT  HERC01.LIBS.JCL(CRIAARQ) - 1.00                   COLUMNS 00001 00072 
+ COMMAND ===>                                                    SCROLL ===> CS 
+ ****** ****ZAP****AUTOSAVE********** TOP OF DATA ******************************
+ 000001 //HERC01XX JOB (CRIAARQ),                                               
+ 000002 //             'EXECUTA CRIAARQ',                                       
+ 000003 //             CLASS=A,                                                 
+ 000004 //             MSGCLASS=H,                                              
+ 000005 //             REGION=8M,TIME=1440,                                     
+ 000006 //             MSGLEVEL=(1,1),                                          
+ 000007 //             NOTIFY=HERC01                                            
+ 000008 //STEP01   EXEC PGM=IEFBR14                                             
+ 000009 //SYSPRINT DD  SYSOUT=*                                                 
+ 000010 //ARQCLI   DD  DSN=HERC01.ARQCLI,                                       
+ 000011 //         DISP=(NEW,CATLG,DELETE),                                     
+ 000012 //         SPACE=(TRK,(1,1),RLSE),                                      
+ 000013 //         UNIT=SYSDA,                                                  
+ 000014 //         DCB=(LRECL=50,BLKSIZE=19050,RECFM=FB,BUFNO=2)                
+ ****** ****ZAP****AUTOSAVE********* BOTTOM OF DATA ****************************
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                      7784K FREE
